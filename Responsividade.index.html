@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página Responsiva</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  #wrap {
+    max-width: 960px;
+    min-width: 700px;
+    margin: 0 auto;
+  }
+  
+  #left-sidebar {
+    width: 20%;
+    background: aquamarine;
+    float: left;
+  }
+  
+  #content {
+    width: 50%;
+    margin: 0 5%;
+    background: burlywood;
+    float: left;
+  }
+  
+  #right-sidebar {
+    width: 20%;
+    background: darkseagreen;
+    float: left;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    #left-sidebar, #content, #right-sidebar {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div id="wrap">
+  <div id="left-sidebar">
+    <h2>Barra Lateral Esquerda</h2>
+    <p>Conteúdo da barra lateral esquerda.</p>
+  </div>
+
+  <div id="content">
+    <h2>Conteúdo Principal</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+  </div>
+
+  <div id="right-sidebar">
+    <h2>Barra Lateral Direita</h2>
+    <p>Conteúdo da barra lateral direita.</p>
+  </div>
+  
+  <div class="clear"></div>
+</div>
+
+</body>
+</html>
